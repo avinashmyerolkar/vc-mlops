@@ -92,7 +92,7 @@ def ensure_directory_exists(file_path: str):
 def main():
     try:
         clf = load_model('./models/model.pkl')
-        test_data = load_data('./data/processed/test_tfidf.csv')
+        test_data = load_data('./data/processed/test_bow.csv')
         
         X_test = test_data.iloc[:, :-1].values
         y_test = test_data.iloc[:, -1].values
